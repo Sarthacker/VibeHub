@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
+    <title>Home - Vibe Hub</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+</head>
+
+<body class="bg-gray-100" style="background-image: url('static/images/home_bg.jpg'); 
+                                background-size: cover; 
+                                background-position: center; 
+                                background-repeat: no-repeat;
+                                background-color: transparent;
+                                z-index=-1;">
+
+    <div id="wrapper" class="flex flex-col justify-between h-screen">
+
+        <!-- header-->
+        <div class="bg-white py-4 shadow dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+
+
+                <div class="flex items-center lg:justify-between justify-around">
+
+                    {% comment %} <a href="trending.html"> {% endcomment %}
+                        <a href="/">
+                            <img src="static\images\logo1.png" alt="Vibe Hub" style="width: 70px; height: auto;">
+                            <b><h1 style="font-size: 1rem;">Vibe Hub</h1></b>
+                        </a>
+                    {% comment %} </a> {% endcomment %}
+
+                    <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
+                        <a href="/signup" class="pink-500 px-6 py-3 rounded-md shadow text-white custom-btn">Register</a>
+                        <a href="/login" class="pink-500 px-6 py-3 rounded-md shadow text-white custom-btn">Login</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content-->
+        <div class="bg-gray-200 rounded-lg p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y- opacity-50">
+            <div class="lg: p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
+                <h1 class="text-pink-500 text-3xl text-xl font-bold  mb-6"> Welcome to Vibe Hub</h1>
+                <h2 class="text-pink-500 font-bold">A place to share your thoughts and connect with people</h2>
+            </div>
+        </div>
+        
+        <!-- footer-->
+        <div class="bg-white py-4 shadow dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center lg:justify-between justify-around">
+                    <p class="text-gray-500">© 2024 Vibe Hub. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+</head>
+</head>
+<body>
+    <div class="bg-white py-4 shadow dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto">
+
+
+            <div class="flex items-center lg:justify-between justify-around">
+
+                    <a href="/">
+                        <img src="static\images\logo1.png" alt="Vibe Hub" style="width: 70px; height: auto;">
+                        <b><h1 style="font-size: 1rem;">Vibe Hub</h1></b>
+                    </a>
+                    <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
+                        <a href="/logout" class="pink-500 px-6 py-3 rounded-md shadow text-white custom-btn">Logout</a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
